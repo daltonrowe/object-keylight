@@ -1,6 +1,7 @@
 import { cube, difference, union } from "scad-js";
 import {
   diffuserSpacing,
+  numberOfPanels,
   panelDepth,
   panelHeight,
   railDepth,
@@ -9,7 +10,7 @@ import {
   railWidth,
 } from "../constants.js";
 
-export default function (numberOfPanels = 4) {
+export default function () {
   return difference(
     cube([railWidth, railDepth, railHeight]),
     union(
