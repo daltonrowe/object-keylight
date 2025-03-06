@@ -16,7 +16,7 @@ export default function (numberOfPanels = 4) {
       cube([panelDepth, panelHeight * 2, panelHeight * 2])
         .rotate_x(45)
         .translate_z(railHeight / 2)
-        .translate_y(diffuserSpacing / 2 * -1),
+        .translate_y((diffuserSpacing / 2) * -1),
       cube([panelDepth, panelHeight * 2, panelHeight * 2])
         .rotate_x(45)
         .translate_z(railHeight / 2)
