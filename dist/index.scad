@@ -3,11 +3,11 @@ union()
 {
   translate(v = [0, 0, -15])
   {
-    cube(size = [192, 149, 2], center = true);
+    cube(size = [192, 150, 2], center = true);
   }
   rotate(a = 90, v = [1, 0, 0])
   {
-    translate(v = [0, 0, -72])
+    translate(v = [0, 0, -72.5])
     {
       union()
       {
@@ -44,7 +44,7 @@ union()
             }
           }
         }
-        translate(v = [0, 0, 144])
+        translate(v = [0, 0, 145])
         {
           rotate(a = 180, v = [0, 1, 0])
           {

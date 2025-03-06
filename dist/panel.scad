@@ -1,2 +1,2 @@
 $fn = 100;
-cube(size = [144, 48, 1.8], center = true);
+cube(size = [145, 48, 1.8], center = true);
