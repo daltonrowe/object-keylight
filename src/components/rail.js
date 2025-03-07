@@ -1,8 +1,6 @@
 import { cube, difference, union } from "scad-js";
 import {
   diffuserSpacing,
-  numberOfPanels,
-  panelDepth,
   panelHeight,
   panelWidth,
   railDepth,
@@ -24,5 +22,5 @@ export default function () {
         .translate_z(railHeight / 2)
         .translate_y(diffuserSpacing / 2),
     ).translate_y(railOffset),
-  )
+  );
 }

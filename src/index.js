@@ -2,7 +2,6 @@ import { cube, union } from "scad-js";
 import rail from "./components/rail.js";
 import {
   boxThickness,
-  numberOfPanels,
   panelDepth,
   panelWidth,
   railDepth,
@@ -18,11 +17,9 @@ function rails() {
 
 export default function () {
   return union(
-    cube([
-      panelWidth,
-      panelDepth + railHeight,
-      boxThickness,
-    ]).translate_z((railDepth / 2) * -1),
+    cube([panelWidth, panelDepth + railHeight, boxThickness]).translate_z(
+      (railDepth / 2) * -1,
+    ),
     rails().rotate_x(90),
   );
 }
