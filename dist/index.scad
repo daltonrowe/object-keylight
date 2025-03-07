@@ -1,19 +1,19 @@
 $fn = 100;
 union()
 {
-  translate(v = [0, 0, -15])
+  translate(v = [0, 0, -13])
   {
-    cube(size = [145, 55, 4], center = true);
+    cube(size = [145, 54.5, 4], center = true);
   }
   rotate(a = 90, v = [1, 0, 0])
   {
-    translate(v = [0, 0, -25])
+    translate(v = [0, 0, -24.75])
     {
       union()
       {
         difference()
         {
-          cube(size = [144.97, 30, 5], center = true);
+          cube(size = [144.97, 26, 5], center = true);
           translate(v = [0, 3, 0])
           {
             union()
@@ -41,13 +41,13 @@ union()
             }
           }
         }
-        translate(v = [0, 0, 50])
+        translate(v = [0, 0, 49.5])
         {
           rotate(a = 180, v = [0, 1, 0])
           {
             difference()
             {
-              cube(size = [144.97, 30, 5], center = true);
+              cube(size = [144.97, 26, 5], center = true);
               translate(v = [0, 3, 0])
               {
                 union()

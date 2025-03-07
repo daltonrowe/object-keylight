@@ -1,7 +1,7 @@
 $fn = 100;
 difference()
 {
-  cube(size = [144.97, 30, 5], center = true);
+  cube(size = [144.97, 26, 5], center = true);
   translate(v = [0, 3, 0])
   {
     union()
