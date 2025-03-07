@@ -2,7 +2,7 @@ export const nothing = 0.03; // some small spacing to prevent z-fighting
 export const tolerance = 0.2;
 
 export const panelWidth = 145;
-export const panelDepth = 48;
+export const panelDepth = 48 + 2;
 export const panelHeight = 1.8;
 
 export const numberOfPanels = 4;
