@@ -11,16 +11,16 @@ import {
 
 function rails() {
   return union(
-    rail(4),
-    rail(4).rotate_y(180).translate_z(panelWidth),
-  ).translate_z((panelWidth / 2) * -1);
+    rail(1),
+    rail(1).rotate_y(180).translate_z(panelDepth),
+  ).translate_z((panelDepth / 2) * -1);
 }
 
 export default function () {
   return union(
     cube([
-      panelDepth * numberOfPanels,
-      panelWidth + railHeight,
+      panelWidth,
+      panelDepth + railHeight,
       boxThickness,
     ]).translate_z((railDepth / 2) * -1),
     rails().rotate_x(90),
