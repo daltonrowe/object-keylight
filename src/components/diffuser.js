@@ -3,9 +3,7 @@ import {
   diffuserDepth,
   diffuserEndcapHeight,
   diffuserHeight,
-  diffuserLockerSize,
   diffuserWidth,
-  panelHeight,
 } from "../constants.js";
 
 export default function () {
@@ -13,6 +11,6 @@ export default function () {
     cube([diffuserWidth, diffuserDepth, diffuserHeight]),
     cube([diffuserHeight, diffuserDepth, diffuserEndcapHeight])
       .translate_z(diffuserEndcapHeight / 2 - diffuserHeight / 2)
-      .translate_x(diffuserWidth / 2)
+      .translate_x(diffuserWidth / 2),
   );
 }
