@@ -33,3 +33,4 @@ export const diffuserDepth = 47.5;
 export const diffuserHeight = 1.9;
 export const diffuserEndcapHeight = 20;
 export const diffuserLockerSize = diffuserHeight * 2;
+export const diffuserHoleRadius = 5;
