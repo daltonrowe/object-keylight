@@ -16,13 +16,20 @@ export const diffuserSpacing = 12;
 
 export const boxThickness = 4;
 
-export const mountWidth = 57;
+export const mountWidth = 58;
 export const mountDepth = 5.7;
 export const mountHeight = 71;
 
+export const mountNeckAttachmentWidth = 70;
 export const mountNeckWidth = 36;
 export const mountNeckHeight = 3;
 
 export const mountCollarWidth = 200;
 export const mountCollarDepth = 10;
 export const mountCollarHeight = 55;
+
+export const diffuserWidth = 145;
+export const diffuserDepth = 47.5;
+export const diffuserHeight = 1.9;
+export const diffuserEndcapHeight = 20;
+export const diffuserLockerSize = diffuserHeight * 2;

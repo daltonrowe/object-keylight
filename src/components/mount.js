@@ -5,6 +5,7 @@ import {
   mountCollarWidth,
   mountDepth,
   mountHeight,
+  mountNeckAttachmentWidth,
   mountNeckHeight,
   mountNeckWidth,
   mountWidth,
@@ -15,9 +16,22 @@ export default function () {
   return intersection(
     sphere(100, 100, 100).translate_y(70),
     difference(
-      cube([mountCollarWidth, mountCollarDepth, mountCollarHeight]),
+      union(
+        cube([mountCollarWidth, mountCollarDepth, mountCollarHeight]),
+        cube([
+          mountNeckAttachmentWidth,
+          mountCollarDepth,
+          mountNeckHeight,
+        ]).translate_z((mountCollarHeight / 2 + mountNeckHeight / 2) * -1),
+      ),
       cube([mountWidth, mountDepth, mountHeight]),
-      cube([mountNeckWidth, mountCollarDepth + nothing, mountNeckHeight]).translate_z(((mountCollarHeight / 2 - mountNeckHeight / 2) + nothing) * -1),
-    )
+      cube([
+        mountNeckWidth,
+        mountCollarDepth + nothing,
+        mountNeckHeight,
+      ]).translate_z(
+        (mountCollarHeight / 2 + mountNeckHeight / 2) * -1 - nothing,
+      ),
+    ),
   );
 }
