@@ -1,4 +1,4 @@
-# object-shadow-puppets
+# object-keylight
 
 ![](./dist/index.png?raw=true)
 
@@ -8,4 +8,3 @@
 npm install
 npm run dev
 ```
-  
