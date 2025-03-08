@@ -19,7 +19,7 @@ export default function () {
       cylinder(diffuserWidth + diffuserHeight * 2, diffuserHoleRadius).rotate_y(90).translate_z(diffuserEndcapHeight / 2).debug()
     ),
     intersection(
-      cube([diffuserLockerSize, diffuserDepth, diffuserLockerSize])
+      cube([diffuserLockerSize, diffuserDepth - diffuserHeight * 2, diffuserLockerSize])
         .rotate_y(45)
         .translate_z(diffuserEndcapHeight)
         .translate_x(diffuserWidth / 2),

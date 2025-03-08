@@ -30,7 +30,7 @@ union()
       {
         rotate(a = 45, v = [0, 1, 0])
         {
-          cube(size = [3.8, 47.5, 3.8], center = true);
+          cube(size = [3.8, 43.7, 3.8], center = true);
         }
       }
     }
