@@ -8,3 +8,9 @@
 npm install
 npm run dev
 ```
+
+## Print Components
+
+- [Rails and Body](./dist/index.stl) x2
+- [Diffuser](./dist/diffuser.stl) x2
+- [Mount](./dist/mount.stl)
